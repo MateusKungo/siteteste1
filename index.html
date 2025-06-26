@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-AO">
 
 <head>
     <meta charset="utf-8">
     <title>NC SISTEMAS</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="NCSISTEMAS, Transformação Digital, Angola, TI, Tecnologia, Software" name="keywords">
+    <meta
+        content="NCSISTEMAS é uma empresa angolana de referência no sector de Tecnologias de Informação (TI) e Transformação Digital, com mais de 10 anos de experiência."
+        name="description">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +30,137 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom CSS for Client Carousel -->
+    <style>
+        .client-carousel .owl-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+        }
+
+        .client-carousel .owl-nav button {
+            pointer-events: auto;
+            background: #007bff;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .client-carousel .owl-nav button:hover {
+            background: #0056b3;
+        }
+
+        .client-carousel .owl-prev {
+            margin-left: -50px;
+        }
+
+        .client-carousel .owl-next {
+            margin-right: -50px;
+        }
+
+        .client-carousel .owl-nav button i {
+            margin: 0;
+        }
+
+        .client-carousel .owl-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .client-carousel .owl-dot {
+            display: inline-block;
+            margin: 0 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+        }
+
+        .client-carousel .owl-dot.active {
+            background: #007bff;
+        }
+
+        .services {
+            background-color: #f8f9fa;
+        }
+
+        .services-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e9ecef;
+            overflow: hidden;
+        }
+
+        .services-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .services-item i {
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+
+        .services-item:hover i {
+            color: #0056b3;
+        }
+
+        .services-item h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .services-item ul {
+            padding-left: 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .services-item ul li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .services-item .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .services-item .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .services-item h4 {
+                font-size: 1.3rem;
+            }
+
+            .services-item i {
+                font-size: 2.5rem;
+            }
+
+            .services-item .btn-primary {
+                padding: 0.4rem 1.2rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -44,13 +177,13 @@
             <div class="d-flex justify-content-between topbar">
                 <div class="top-info">
                     <small class="me-3 text-white-50"><a href="#"><i
-                                class="fas fa-map-marker-alt me-2 text-secondary"></i></a>23 Ranking Street, New
-                        York</small>
-                    <small class="me-3 text-white-50"><a href="#"><i
-                                class="fas fa-envelope me-2 text-secondary"></i></a>Email@Example.com</small>
+                                class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Avenida Hoji ya Henda, Nelito
+                        Soares, CNº63</small>
+                    <small class="me-3 text-white-50"><a href="mailto:geral@ncsistemas.it.ao"><i
+                                class="fas fa-envelope me-2 text-secondary"></i></a>geral@ncsistemas.it.ao</small>
                 </div>
-                <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your
-                        Business</small></div>
+                <div id="note" class="text-secondary d-none d-xl-flex"><small>NCSISTEMAS: A impulsionar o seu negócio
+                        para o futuro</small></div>
                 <div class="top-link">
                     <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
                             class="fab fa-facebook-f text-primary"></i></a>
@@ -71,7 +204,7 @@
         <div class="container">
             <nav class="navbar navbar-dark navbar-expand-lg py-0 items-center">
                 <a href="index.html" class="navbar-brand">
-                    <h6 class="text-white fw-bold d-block">NC SISTEMAS</h6>
+                    <img src="img/imgnclogo.png" alt="logo" class="img-fluid" style="width: 150px; height: auto;">
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -80,16 +213,15 @@
                 <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
                         <a href="#" class="nav-item nav-link active text-secondary">Início</a>
-                        <a href="#about" class="nav-item nav-link">Sobre</a>
+                        <a href="#about" class="nav-item nav-link">Quem somos</a>
                         <a href="#service" class="nav-item nav-link">Serviços</a>
                         <a href="#project" class="nav-item nav-link">Projetos</a>
-
                         <a href="#contact" class="nav-item nav-link">Contato</a>
                     </div>
                 </div>
                 <div class="d-none d-xl-flex flex-shirink-0">
                     <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
-                        <a href="" class="position-relative animated tada infinite">
+                        <a href="tel:+244958154631" class="position-relative animated tada infinite">
                             <i class="fa fa-phone-alt text-white fa-2x"></i>
                             <div class="position-absolute" style="top: -7px; left: 20px;">
                                 <span><i class="fa fa-comment-dots text-secondary"></i></span>
@@ -98,9 +230,9 @@
                     </div>
                     <div class="d-flex flex-column pe-4 border-end">
                         <span class="text-white-50">Tem alguma dúvida?</span>
-                        <span class="text-secondary">Ligue: + 0123 456 7890</span>
+                        <span class="text-secondary">Ligue: <a href="tel:+244958154631" class="text-white">+244 958 154
+                                631</a> </span>
                     </div>
-
                 </div>
             </nav>
         </div>
@@ -123,13 +255,13 @@
                             <h1 class="text-white display-1 mb-4 animated fadeInRight">
                                 Construindo o futuro da tecnologia.</h1>
                             <p class="mb-4 text-white fs-5 animated fadeInDown">
-                                Experimente o futuro da tecnologia com a NC Sistem. Estamos aqui para impulsionar sua
+                                Experimente o futuro da tecnologia com a NCSISTEMAS. Estamos aqui para impulsionar sua
                                 transformação digital.
                             </p>
-                            <a href="" class="me-2"><button type="button"
+                            <a href="#about" class="me-2"><button type="button"
                                     class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Leia
                                     Mais</button></a>
-                            <a href="" class="ms-2"><button type="button"
+                            <a href="#contact" class="ms-2"><button type="button"
                                     class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Entre
                                     em Contato</button></a>
                         </div>
@@ -142,13 +274,12 @@
                             <h6 class="text-secondary h4 animated fadeInUp">Melhores Soluções em TI</h6>
                             <h1 class="text-white display-1 mb-4 animated fadeInLeft">Serviços Digitais de Qualidade que
                                 Você Realmente Precisa!</h1>
-                            <p class="mb-4 text-white fs-5 animated fadeInDown">Lorem ipsum dolor sit amet elit. Sed
-                                efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies
-                                tincidunt.</p>
-                            <a href="" class="me-2"><button type="button"
-                                    class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Leia
-                                    Mais</button></a>
-                            <a href="" class="ms-2"><button type="button"
+                            <p class="mb-4 text-white fs-5 animated fadeInDown">Soluções que transformam, resultados que
+                                inspiram. Descubra como podemos ajudar a sua empresa a crescer.</p>
+                            <a href="#service" class="me-2"><button type="button"
+                                    class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Nossos
+                                    Serviços</button></a>
+                            <a href="#contact" class="ms-2"><button type="button"
                                     class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Entre
                                     em Contato</button></a>
                         </div>
@@ -167,40 +298,38 @@
     </div>
     <!-- Carousel End -->
 
-
     <!-- Fact Start -->
     <div class="container-fluid bg-secondary py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
                     <div class="d-flex counter">
-                        <h1 class="me-3 text-primary counter-value">99</h1>
-                        <h5 class="text-white mt-1">Sucesso em conquistar clientes satisfeitos</h5>
+                        <h1 class="me-3 text-primary counter-value">10</h1>
+                        <h5 class="text-white mt-1">Anos de experiência no mercado angolano</h5>
                     </div>
                 </div>
                 <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
                     <div class="d-flex counter">
-                        <h1 class="me-3 text-primary counter-value">25</h1>
-                        <h5 class="text-white mt-1">Milhares de negócios bem-sucedidos</h5>
+                        <h1 class="me-3 text-primary counter-value">99</h1>
+                        <h5 class="text-white mt-1">Projetos de sucesso concluídos</h5>
                     </div>
                 </div>
                 <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
                     <div class="d-flex counter">
                         <h1 class="me-3 text-primary counter-value">120</h1>
-                        <h5 class="text-white mt-1">Total de clientes que amam a NC SISTEMAS</h5>
+                        <h5 class="text-white mt-1">Clientes satisfeitos em Angola</h5>
                     </div>
                 </div>
                 <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
                     <div class="d-flex counter">
-                        <h1 class="me-3 text-primary counter-value">5</h1>
-                        <h5 class="text-white mt-1">Avaliações de 5 estrelas dadas por clientes satisfeitos</h5>
+                        <h1 class="me-3 text-primary counter-value">25</h1>
+                        <h5 class="text-white mt-1">Especialistas em TI e Transformação Digital</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Fact End -->
-
 
     <!-- About Start -->
     <div class="container-fluid py-5 my-5">
@@ -215,337 +344,358 @@
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                    <h5 class="text-primary">Sobre Nós</h5>
-                    <h1 class="mb-4">Sobre a NC SISTEMASe Suas Soluções Inovadoras em TI</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum.
-                        Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo
-                        cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque
-                        quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo
-                        nec erat vestibulum, et malesuada augue laoreet.</p>
-                    <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit
-                        amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin
-                        scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
-                    <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Mais Detalhes</a>
+                    <h5 class="text-primary">Quem somos</h5>
+                    <h1 class="mb-4">NCSISTEMAS – Transformação Digital em Angola</h1>
+                    <p>NCSISTEMAS, uma empresa angolana de referência no sector de Tecnologias de Informação (TI) e
+                        Transformação Digital, com mais de 10 anos de experiência no mercado nacional.</p>
+                    <p>Ao longo desta década, consolidamos a nossa posição como parceiros estratégicos de organizações
+                        públicas e privadas, oferecendo soluções tecnológicas inovadoras, seguras e personalizadas,
+                        alinhadas com as necessidades de um mundo cada vez mais digital.</p>
+                    <p>Com um compromisso firme com a excelência, qualidade e valorização do talento local, a NCSISTEMAS
+                        tem contribuído activamente para a modernização do ecossistema empresarial em Angola, através de
+                        serviços como:</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Consultoria em TI e Transformação
+                            Digital</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Desenvolvimento de Software e
+                            Aplicações Empresariais</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Infraestruturas de Redes e
+                            Cibersegurança</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i>Cloud Computing e Big Data</li>
+                        <li><i class="fa fa-check text-primary me-2"></i>Sistemas de Gestão Integrada (ERP, CRM)</li>
+                    </ul>
+                    <p>A nossa missão é impulsionar a eficiência e a competitividade dos nossos clientes, combinando
+                        tecnologia de ponta, know-how especializado e uma profunda compreensão do mercado angolano.</p>
+                    <p class="mb-4"><strong>Seja bem-vindo(a) ao futuro da inovação com a NCSISTEMAS – Soluções que
+                            transformam, resultados que inspiram!</strong></p>
+                    <a href="#contact" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Contacte-nos</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
 
-
     <!-- Services Start -->
-   <div class="container-fluid services py-5 mb-5" id="service">
-    <div class="container">
-        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Nossos Serviços</h5>
-            <h1>Serviços Desenvolvidos Especificamente para o Seu Negócio</h1>
-        </div>
-        <div class="row g-5 services-inner">
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fas fa-shield-alt fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Segurança da Informação</h4>
-                            <ul class="mb-4 text-left">
-                                <li>Auditoria e compliance (LGPD, GDPR, ISO 27001)</li>
-                                <li>Pentest</li>
-                                <li>Gestão de riscos</li>
-                                <li>Resposta a incidentes</li>
-                                <li>Treinamento em conscientização de segurança</li>
+    <div class="container-fluid services py-5 mb-5" id="service">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 700px;">
+                <h5 class="text-primary text-uppercase mb-3">Nossos Serviços</h5>
+                <h1 class="display-5 font-weight-bold">Soluções Personalizadas para Impulsionar Seu Negócio</h1>
+            </div>
+            <div class="row g-4 services-inner">
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="services-item bg-white rounded shadow-sm">
+                        <div class="p-4 text-center">
+                            <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
+                            <h4 class="mb-3 font-weight-semibold">Segurança da Informação</h4>
+                            <ul class="list-unstyled text-left mb-4">
+                                <li><i class="fas fa-check text-primary me-2"></i>Auditoria e compliance (LGPD, GDPR,
+                                    ISO 27001)</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Pentest</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Gestão de riscos</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Resposta a incidentes</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Treinamento em conscientização</li>
                             </ul>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leia Mais</a>
+                            <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fas fa-cloud fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Transformação Digital</h4>
-                            <ul class="mb-4 text-left">
-                                <li>Migração para nuvem (AWS, Azure, Google Cloud)</li>
-                                <li>Modernização de sistemas legados</li>
-                                <li>Automação de processos (RPA, BPM)</li>
-                                <li>Implementação de IA e Machine Learning</li>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="services-item bg-white rounded shadow-sm">
+                        <div class="p-4 text-center">
+                            <i class="fas fa-cloud fa-3x mb-3 text-primary"></i>
+                            <h4 class="mb-3 font-weight-semibold">Transformação Digital</h4>
+                            <ul class="list-unstyled text-left mb-4">
+                                <li><i class="fas fa-check text-primary me-2"></i>Migração para nuvem (AWS, Azure,
+                                    Google Cloud)</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Modernização de sistemas legados</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Automação de processos (RPA, BPM)</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Implementação de IA e Machine Learning
+                                </li>
                             </ul>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leia Mais</a>
+                            <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fas fa-cogs fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Governança de TI</h4>
-                            <ul class="mb-4 text-left">
-                                <li>Alinhamento de TI aos negócios (COBIT, ITIL)</li>
-                                <li>Gestão de serviços de TI (ITSM)</li>
-                                <li>Gestão de projetos (PMO, Agile, Scrum)</li>
-                                <li>Análise de maturidade tecnológica</li>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="services-item bg-white rounded shadow-sm">
+                        <div class="p-4 text-center">
+                            <i class="fas fa-cogs fa-3x mb-3 text-primary"></i>
+                            <h4 class="mb-3 font-weight-semibold">Governança de TI</h4>
+                            <ul class="list-unstyled text-left mb-4">
+                                <li><i class="fas fa-check text-primary me-2"></i>Alinhamento de TI aos negócios (COBIT,
+                                    ITIL)</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Gestão de serviços de TI (ITSM)</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Gestão de projetos (PMO, Agile, Scrum)
+                                </li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Análise de maturidade tecnológica</li>
                             </ul>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leia Mais</a>
+                            <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fas fa-server fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Infraestrutura e Cloud Computing</h4>
-                            <ul class="mb-4 text-left">
-                                <li>Arquitetura de redes e data centers</li>
-                                <li>Virtualização e containers (Docker, Kubernetes)</li>
-                                <li>Otimização de custos em cloud</li>
-                                <li>Recuperação de desastres</li>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="services-item bg-white rounded shadow-sm">
+                        <div class="p-4 text-center">
+                            <i class="fas fa-server fa-3x mb-3 text-primary"></i>
+                            <h4 class="mb-3 font-weight-semibold">Infraestrutura e Cloud Computing</h4>
+                            <ul class="list-unstyled text-left mb-4">
+                                <li><i class="fas fa-check text-primary me-2"></i>Arquitetura de redes e data centers
+                                </li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Virtualização e containers (Docker,
+                                    Kubernetes)</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Otimização de custos em cloud</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Recuperação de desastres</li>
                             </ul>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leia Mais</a>
+                            <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fas fa-code-branch fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Desenvolvimento de Software e DevOps</h4>
-                            <ul class="mb-4 text-left">
-                                <li>Arquitetura de software (microsserviços, serverless)</li>
-                                <li>CI/CD</li>
-                                <li>Metodologias ágeis (Scrum, Kanban)</li>
-                                <li>Análise de código (Code Review, SonarQube)</li>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="services-item bg-white rounded shadow-sm">
+                        <div class="p-4 text-center">
+                            <i class="fas fa-code-branch fa-3x mb-3 text-primary"></i>
+                            <h4 class="mb-3 font-weight-semibold">Desenvolvimento de Software e DevOps</h4>
+                            <ul class="list-unstyled text-left mb-4">
+                                <li><i class="fas fa-check text-primary me-2"></i>Arquitetura de software
+                                    (microsserviços, serverless)</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>CI/CD</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Metodologias ágeis (Scrum, Kanban)
+                                </li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Análise de código (Code Review,
+                                    SonarQube)</li>
                             </ul>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leia Mais</a>
+                            <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fas fa-chart-bar fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Dados e Business Intelligence (BI)</h4>
-                            <ul class="mb-4 text-left">
-                                <li>Big Data e Analytics (Hadoop, Spark)</li>
-                                <li>Data Science</li>
-                                <li>Machine Learning</li>
-                                <li>Data Governance</li>
-                                <li>Business Intelligence (Power BI, Tableau)</li>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="services-item bg-white rounded shadow-sm">
+                        <div class="p-4 text-center">
+                            <i class="fas fa-chart-bar fa-3x mb-3 text-primary"></i>
+                            <h4 class="mb-3 font-weight-semibold">Dados e Business Intelligence (BI)</h4>
+                            <ul class="list-unstyled text-left mb-4">
+                                <li><i class="fas fa-check text-primary me-2"></i>Big Data e Analytics (Hadoop, Spark)
+                                </li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Data Science</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Machine Learning</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Data Governance</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Business Intelligence (Power BI,
+                                    Tableau)</li>
                             </ul>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leia Mais</a>
+                            <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <div class="services-content-icon">
-                            <i class="fas fa-users fa-7x mb-4 text-primary"></i>
-                            <h4 class="mb-3">Experiência do Usuário (UX) e Design Thinking</h4>
-                            <ul class="mb-4 text-left">
-                                <li>Pesquisa de usuários</li>
-                                <li>Prototipagem</li>
-                                <li>Testes de usabilidade</li>
-                                <li>Acessibilidade digital</li>
-                                <li>Otimização de interfaces (UI/UX)</li>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="services-item bg-white rounded shadow-sm">
+                        <div class="p-4 text-center">
+                            <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                            <h4 class="mb-3 font-weight-semibold">Experiência do Usuário (UX) e Design Thinking</h4>
+                            <ul class="list-unstyled text-left mb-4">
+                                <li><i class="fas fa-check text-primary me-2"></i>Pesquisa de usuários</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Prototipagem</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Testes de usabilidade</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Acessibilidade digital</li>
+                                <li><i class="fas fa-check text-primary me-2"></i>Otimização de interfaces (UI/UX)</li>
                             </ul>
-                            <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Leia Mais</a>
+                            <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
     <!-- Services End -->
 
-
     <!-- Project Start -->
- <div class="container-fluid project py-5 mb-5" id="project">
-    <div class="container">
-        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Nosso Projeto</h5>
-            <h1>Nossos Projetos Concluídos Recentemente</h1>
-        </div>
-        <div class="row g-5">
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="img/project-1.jpg" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="#" class="text-center">
-                                <h4 class="text-secondary">Design de Web</h4>
-                                <p class="m-0 text-white">Análise de Web</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="img/project-2.jpg" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="#" class="text-center">
-                                <h4 class="text-secondary">Segurança Cibernética</h4>
-                                <p class="m-0 text-white">Núcleo de Segurança Cibernética</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="img/project-3.jpg" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="#" class="text-center">
-                                <h4 class="text-secondary">Informações de Mobile</h4>
-                                <p class="m-0 text-white">Telefone em Breve</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="#" class="text-center">
-                                <h4 class="text-secondary">Desenvolvimento Web</h4>
-                                <p class="m-0 text-white">Análise de Web</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="#" class="text-center">
-                                <h4 class="text-secondary">Marketing Digital</h4>
-                                <p class="m-0 text-white">Análise de Marketing</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                <div class="project-item">
-                    <div class="project-img">
-                        <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt="">
-                        <div class="project-content">
-                            <a href="#" class="text-center">
-                                <h4 class="text-secondary">Pesquisa de Palavras-chave</h4>
-                                <p class="m-0 text-white">Análise de Palavras-chave</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-    <!-- Contact Start -->
-   <div class="container-fluid py-5 mb-5" id="contact">
-    <div class="container">
-        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-            <h5 class="text-primary">Entre em Contato</h5>
-            <h1 class="mb-3">Contato para qualquer dúvida</h1>
-        </div>
-        <div class="contact-detail position-relative p-5">
-            <div class="row g-5 mb-5 justify-content-center">
-                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                    <div class="d-flex bg-light p-3 rounded">
-                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
-                            style="width: 64px; height: 64px;">
-                            <i class="fas fa-map-marker-alt text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h4 class="text-primary">Endereço</h4>
-                            <a href="https://goo.gl/maps/5zq3Z8Y9Z8Y9Z8Y9Z" target="_blank" class="h5">Avenida 4 de Fevereiro, Luanda, Angola</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                    <div class="d-flex bg-light p-3 rounded">
-                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
-                            style="width: 64px; height: 64px;">
-                            <i class="fa fa-phone text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h4 class="text-primary">Ligue para Nós</h4>
-                            <a class="h5" href="tel:+0123456789" target="_blank">+012 3456 7890</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
-                    <div class="d-flex bg-light p-3 rounded">
-                        <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
-                            style="width: 64px; height: 64px;">
-                            <i class="fa fa-envelope text-white"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h4 class="text-primary">Envie-nos um E-mail</h4>
-                            <a class="h5" href="mailto:info@example.com" target="_blank">info@exemplo.com</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="container-fluid project py-5 mb-5" id="project">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Nosso Projeto</h5>
+                <h1>Nossos Projetos Concluídos Recentemente</h1>
             </div>
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
-                    <div class="p-5 h-100 rounded contact-map">
-                        <iframe class="rounded w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.643297387668!2d13.230175614757104!3d-8.814655994670955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a2781b6b3b3b3b3%3A0x7a7a7a7a7a7a7a7a!2sAvenida%204%20de%20Fevereiro%2C%20Luanda%2C%20Angola!5e0!3m2!1spt!2sao!4v1698765432109!5m2!1spt!2sao"
-                            style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/project-1.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">Sistemas de Gestão</h4>
+                                    <p class="m-0 text-white">Implementação de ERP/CRM</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-                    <div class="p-5 rounded contact-form">
-                        <div class="mb-4">
-                            <input type="text" class="form-control border-0 py-3" placeholder="Seu Nome">
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/project-2.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">Segurança Cibernética</h4>
+                                    <p class="m-0 text-white">Auditoria de Segurança</p>
+                                </a>
+                            </div>
                         </div>
-                        <div class="mb-4">
-                            <input type="email" class="form-control border-0 py-3" placeholder="Seu E-mail">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/project-3.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">Cloud Computing</h4>
+                                    <p class="m-0 text-white">Migração para a Nuvem</p>
+                                </a>
+                            </div>
                         </div>
-                        <div class="mb-4">
-                            <input type="text" class="form-control border-0 py-3" placeholder="Projeto">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">Desenvolvimento Web</h4>
+                                    <p class="m-0 text-white">Portal Corporativo</p>
+                                </a>
+                            </div>
                         </div>
-                        <div class="mb-4">
-                            <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10"
-                                placeholder="Mensagem"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">Aplicações Móveis</h4>
+                                    <p class="m-0 text-white">Desenvolvimento de Apps</p>
+                                </a>
+                            </div>
                         </div>
-                        <div class="text-start">
-                            <button class="btn bg-primary text-white py-3 px-5" type="button">Enviar Mensagem</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">Business Intelligence</h4>
+                                    <p class="m-0 text-white">Dashboard Analítico</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-    <!-- Contact End -->
+    <!-- Project End -->
 
+    <!-- Nossos Clientes Start -->
+    <div class="container-fluid py-5 mb-5" id="clients">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Nossos Clientes</h5>
+                <h1>Empresas que Confiam no Nosso Trabalho</h1>
+            </div>
+            <div class="owl-carousel client-carousel">
+                <!-- Os itens do carrossel serão preenchidos pelo JavaScript -->
+            </div>
+        </div>
+    </div>
+    <!-- Nossos Clientes End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5 mb-5" id="contact">
+        <div class="container">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Entre em Contato</h5>
+                <h1 class="mb-3">Contato para qualquer dúvida</h1>
+            </div>
+            <div class="contact-detail position-relative p-5">
+                <div class="row g-5 mb-5 justify-content-center">
+                    <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                        <div class="d-flex bg-light p-3 rounded">
+                            <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                                style="width: 64px; height: 64px;">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="text-primary">Endereço</h4>
+                                <a href="https://goo.gl/maps/5zq3Z8Y9Z8Y9Z8Y9Z" target="_blank" class="h5">Avenida Hoji
+                                    ya Henda, Nelito Soares, CNº63</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                        <div class="d-flex bg-light p-3 rounded">
+                            <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                                style="width: 64px; height: 64px;">
+                                <i class="fa fa-phone text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="text-primary">Ligue para Nós</h4>
+                                <a class="h5" href="tel:+244958154631" target="_blank">+244 958 154 631</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
+                        <div class="d-flex bg-light p-3 rounded">
+                            <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                                style="width: 64px; height: 64px;">
+                                <i class="fa fa-envelope text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="text-primary">Envie-nos um E-mail</h4>
+                                <a class="h5" href="mailto:geral@ncsistemas.it.ao"
+                                    target="_blank">geral@ncsistemas.it.ao</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                        <div class="p-5 h-100 rounded contact-map">
+                            <iframe class="rounded w-100 h-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.840742579294!2d13.242767875908599!3d-8.799738090333202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f33f1b4db1b1%3A0x67a3f5a250c65518!2sAv.%20Hoji%20ya%20Henda%2063%2C%20Luanda%2C%20Angola!5e0!3m2!1spt-PT!2spt!4v1698765432109!5m2!1spt-PT!2spt"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                        <div class="p-5 rounded contact-form">
+                            <div class="mb-4">
+                                <input type="text" class="form-control border-0 py-3" placeholder="Seu Nome">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" class="form-control border-0 py-3" placeholder="Seu E-mail">
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" class="form-control border-0 py-3" placeholder="Assunto">
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10"
+                                    placeholder="Mensagem"></textarea>
+                            </div>
+                            <div class="text-start">
+                                <button class="btn bg-primary text-white py-3 px-5" type="button">Enviar
+                                    Mensagem</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
@@ -553,10 +703,10 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <a href="index.html">
-                        <h1 class="text-white fw-bold d-block">NC SISTEMAS</h1>
+                        <img src="img/imgnclogo.png" alt="" class="img-fluid mb-3" style="width: 180px; height: auto;">
                     </a>
-                    <p class="mt-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere
-                        delectus qui placeat inventore consectetur repellendus optio debitis.</p>
+                    <p class="mt-4 text-light">Soluções que transformam, resultados que inspiram. O seu parceiro
+                        estratégico para a inovação e crescimento em Angola.</p>
                     <div class="d-flex NC SISTEMAS-link">
                         <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
                                 class="fab fa-facebook-f text-primary"></i></a>
@@ -571,17 +721,17 @@
                 <div class="col-lg-3 col-md-6">
                     <a href="#" class="h3 text-secondary">Links Rápidos</a>
                     <div class="mt-4 d-flex flex-column short-link">
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Sobre
-                            Nós</a>
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Entre
-                            em
+                        <a href="#about" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>Quem Somos</a>
+                        <a href="#contact" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>Entre em
                             Contato</a>
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nossos
+                        <a href="#service" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>Nossos
                             Serviços</a>
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Nossos
+                        <a href="#project" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>Nossos
                             Projetos</a>
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Último
-                            Blog</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -594,9 +744,7 @@
                             de Privacidade</a>
                         <a href="" class="mb-2 text-white"><i
                                 class="fas fa-angle-right text-secondary me-2"></i>Ajuda</a>
-                        <a href="" class="mb-2 text-white"><i
-                                class="fas fa-angle-right text-secondary me-2"></i>Perguntas Frequentes</a>
-                        <a href="" class="mb-2 text-white"><i
+                        <a href="#contact" class="mb-2 text-white"><i
                                 class="fas fa-angle-right text-secondary me-2"></i>Contato</a>
                     </div>
                 </div>
@@ -604,25 +752,22 @@
                     <a href="#" class="h3 text-secondary">Entre em Contato</a>
                     <div class="text-white mt-4 d-flex flex-column contact-link">
                         <a href="#" class="pb-3 text-light border-bottom border-primary"><i
-                                class="fas fa-map-marker-alt text-secondary me-2"></i> Rua 123, Nova York, EUA</a>
-                        <a href="#" class="py-3 text-light border-bottom border-primary"><i
-                                class="fas fa-phone-alt text-secondary me-2"></i> +123 456 7890</a>
-                        <a href="#" class="py-3 text-light border-bottom border-primary"><i
-                                class="fas fa-envelope text-secondary me-2"></i> info@exemplo.com</a>
+                                class="fas fa-map-marker-alt text-secondary me-2"></i> Av. Hoji ya Henda, 63, Luanda</a>
+                        <a href="tel:+244958154631" class="py-3 text-light border-bottom border-primary"><i
+                                class="fas fa-phone-alt text-secondary me-2"></i> +244 958 154 631</a>
+                        <a href="mailto:geral@ncsistemas.it.ao" class="py-3 text-light border-bottom border-primary"><i
+                                class="fas fa-envelope text-secondary me-2"></i> geral@ncsistemas.it.ao</a>
                     </div>
                 </div>
             </div>
             <hr class="text-light mt-5 mb-4">
-
         </div>
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
             class="fa fa-arrow-up text-white"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -634,6 +779,57 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Lista de imagens dos clientes (substitua pelos caminhos reais das suas imagens)
+            const clientImages = [
+                { src: 'img/imgEmpe.png', alt: 'Logo Cliente 1' },
+                { src: 'img/empresa_2.jpg', alt: 'Logo Cliente 2' },
+                { src: 'img/imgEmpe.png', alt: 'Logo Cliente 3' },
+                { src: 'img/empresa_2.jpg', alt: 'Logo Cliente 4' },
+                { src: 'img/imgEmpe.png', alt: 'Logo Cliente 5' },
+                { src: 'img/empresa_2.jpg', alt: 'Logo Cliente 6' }
+            ];
+
+            // Preencher o carrossel com as imagens
+            const carousel = $('.client-carousel');
+            clientImages.forEach((image, index) => {
+                carousel.append(
+                    `
+                    <div class="client-item m-2">
+                        <div class="card border-1 shadow-sm text-center">
+                            <img src="${image.src}" class="img-fluid p-4" alt="${image.alt}" style="max-height: 150px; object-fit: contain;">
+                        </div>
+                    </div>
+                `);
+            });
+
+            // Inicializar o Owl Carousel
+            $('.client-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                navText: [
+                    '<i class="fas fa-chevron-left"></i>',
+                    '<i class="fas fa-chevron-right"></i>'
+                ],
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
